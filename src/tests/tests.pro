@@ -1,5 +1,6 @@
 TEMPLATE = subdirs
+QT_FOR_CONFIG += gui-private
 
-contains(QT_CONFIG, xcb) {
+qtConfig(xcb) {
   SUBDIRS += auto
 }
